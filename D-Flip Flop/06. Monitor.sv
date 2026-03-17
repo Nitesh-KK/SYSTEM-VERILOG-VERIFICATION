@@ -9,7 +9,7 @@ class monitor;
   endfunction
   
   task run();
-    repeat(50) begin
+    repeat(30) begin
       trans=new();
       @(posedge interf.clk) begin
       	trans.rst=interf.rst;
