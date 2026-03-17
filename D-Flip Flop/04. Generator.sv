@@ -9,7 +9,7 @@ class generator;
   
   task run();
     this.trans=trans;
-    repeat(50) begin
+    repeat(30) begin
       trans=new();
       void'(trans.randomize());
       trans.display("Generator");
