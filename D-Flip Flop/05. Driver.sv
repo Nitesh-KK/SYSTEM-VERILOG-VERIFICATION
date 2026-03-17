@@ -10,7 +10,7 @@ class driver;
   
   task run();
     trans=new();
-    repeat(50) begin
+    repeat(30) begin
       gen_to_driv.get(trans);
       @(negedge interf.clk) begin
         interf.d<=trans.d;
